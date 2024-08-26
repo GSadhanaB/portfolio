@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Very dark background */
+            color: #e0e0e0; /* Light text color */
+        }
+        .bg-light-dark {
+            background-color: #1e1e1e; /* Slightly lighter dark background */
+        }
+        .header-button {
+            background-color: #333; /* Dark button background */
+            color: #e0e0e0; /* Light button text color */
+            border: 1px solid #4A90E2; /* Blue border for button */
+        }
+        .header-button:hover {
+            background-color: #4A90E2; /* Blue button background on hover */
+            color: #fff; /* White text on hover */
+        }
+        .social-icons a {
+            color: #e0e0e0;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #4A90E2; /* Blue color on hover */
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #2c2c2c; /* Dark input background */
+            border: 1px solid #444; /* Darker border */
+            color: #e0e0e0; /* Light text color */
+        }
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #888; /* Placeholder color */
+        }
+        .contact-form button {
+            background-color: #4A90E2; /* Blue button background */
+            color: #fff; /* White text color */
+        }
+        .contact-form button:hover {
+            background-color: #357ABD; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-100">My Portfolio</a>
+            <div class="mt-4 md:mt-0 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                <a href="index.html" class="text-gray-300 hover:text-gray-100 transition duration-300">About</a>
+                <a href="projects.html" class="text-gray-300 hover:text-gray-100 transition duration-300">Projects</a>
+                <a href="contact.html" class="text-gray-300 hover:text-gray-100 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light-dark">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold md:text-4xl">Contact Me</h2>
+            <p class="text-gray-400 mt-2 mb-8">Feel free to reach out through any of the following methods:</p>
+            
+            <!-- Contact Form -->
+            <div class="max-w-md mx-auto bg-gray-800 p-6 rounded shadow-md contact-form">
+                <form action="https://formspree.io/f/xgvwdejw" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-300">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300">Message</label>
+                        <textarea id="message" name="message" required class="w-full p-2 rounded" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-2 rounded">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="mt-8 flex flex-wrap justify-center space-x-6 social-icons">
+                <!-- GitHub -->
+                <a href="https://github.com/Sadhanagb" target="_blank" class="text-gray-400 hover:text-gray-100">
+                    <i class="fab fa-github fa-2x"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/sadhana-gb/" target="_blank" class="text-gray-400 hover:text-gray-100">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <!-- Email -->
+                <a href="mailto:sadhanagb.16@gmail.com" class="text-gray-400 hover:text-gray-100">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <span class="sr-only">Email</span>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sadhanaa_26/" target="_blank" class="text-gray-400 hover:text-gray-100">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-4">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 Sadhana G. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
